@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.navigation {
+    min-width: 16rem;
+    width: 16rem;
+    background-color: #1E1E1E;
+    box-shadow: 6px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}
+
+.navigation--collapse {
+    /* transform: translateX(-16rem); */
+    transition: all 0.2s ease-in;
+    min-width: 0;
+    width: 0;
+}
+
+.site-container--full {
+    transition: transform 0.1s ease-in;
+
+}
+
+.navigation__header {
+    height: 5rem;
+    background-color: #003932;
+    border-bottom: 1px solid #005e51;
+}
+
+.navigation__header-text {
+    font-size: 2rem;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 300;
+    line-height: 2.8rem;
+    color: #ffffff; 
+    border-bottom: 1px solid #ffffff;
+}
+
+.navigation__menu {
+    list-style: none;
+}
+
+.navigation__menu-items {
+    height: 4rem;
+    border-bottom: 1px solid #303030;
+    border-right: 0rem solid #005e51;
+}
+
+.navigation__menu-items:hover {
+    background-color: #292929;
+    border-right: .4rem solid #005e51;
+    transition: all 0.2s ease-in;
+}
+
+.site-container {
+    background-color: white-smoke;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    transition: transform 0.1s ease-in;
+}
+.header {
+    height: 3rem;
+    background-color: #003932;
+    box-shadow: 0px 6px 5px -1px rgba(0, 0, 0, 0.14);
+}
+
+.content {
+    height: calc(100% - 3rem)
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon__el {
+    margin-top: 5px;
+    height: 2px;
+    width: 1.4rem;
+    background-color: #fff;
+}
+
+
+
+

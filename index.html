@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="html" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>Full height Side Navigation</title>
+    </head>
+    <body class="d-flex h-100">
+        <nav class="navigation h-100">
+            <div class="d-flex justify-content-center align-items-center navigation__header">
+                <p class="navigation__header-text">CRODA</p>
+                
+            </div>
+            <ul class="d-flex flex-column px-0 navigation__menu">
+                <li class="navigation__menu-items"></li>
+                <li class="navigation__menu-items"></li>
+                <li class="navigation__menu-items"></li>
+                <li class="navigation__menu-items"></li>
+            </ul>
+        </nav>
+        <div class="container-fluid h-100 site-container">
+            <div class="row header">
+                <div class="col-1 d-flex justify-content-center align-items-center" style="padding-bottom: 8px">
+                    <div class="menu-icon">
+                        <div class="menu-icon__el"></div>
+                        <div class="menu-icon__el"></div>
+                        <div class="menu-icon__el"></div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <h1>Sampling Replenishment</h1>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col">
+                    Content
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleNav() {
+                document.querySelector('.navigation').classList.toggle('navigation--collapse')
+                document.querySelector('.site-container').classList.toggle('site-container--full')
+            }
+            document.querySelector('.menu-icon').addEventListener('click', toggleNav)
+        </script>
+    </body>
+</html>
